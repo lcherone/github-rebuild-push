@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd src && npm ci
+      - run: cd src && rm node_modules -Rf && npm i
       - run: cd src && npm run build
       - name: Commit and push built
         run: |
