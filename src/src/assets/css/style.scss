@@ -1,0 +1,31 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+[v-cloak] > * {
+  display: none;
+}
+
+body {
+  padding: 30px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.loading-wrap .loading-icon {
+  z-index: 9999;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -3rem;
+  color: #dcdee2;
+}

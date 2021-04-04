@@ -4,11 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "parcel index.html",
     "build": "rm -rf dist && rm -rf .cache && NODE_ENV=production && parcel build index.html --no-source-maps --detailed-report"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-router": "^3.5.1"
+  },
   "devDependencies": {
-    "parcel-bundler": "1.12.4"
+    "@vue/component-compiler-utils": "^3.2.0",
+    "parcel-bundler": "1.12.5",
+    "sass": "^1.32.8",
+    "vue-template-compiler": "^2.6.12"
   }
 }
